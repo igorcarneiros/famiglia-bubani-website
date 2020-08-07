@@ -49,40 +49,43 @@ video{
   max-height: 500px;
 }
 
+
+
 /* quem somos */
 #sobre{
   background-image: url(/public/assets/pics/Produtos\ Ilustrativas/25052018-IMG_9627.jpg);
     
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 #sobre p{
   color: white;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 10%;
+}
+.qs{
+  background-color: #1f1f1f80;
+  border-radius: 8px;
 }
 #sobre2{
   background-image: url(/public/assets/pics/Pessoas/24052018-IMG_9179-2.jpg);
   
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-#sobre2 p{
-  font-family: cursive;
-  font-size: 30px;
-  color: #DCD4C4;
-  padding-left: 50px;
-  padding-right: 50px;
  
 }
-.poema{
-  border-radius: 8px;
-  margin: 0px 900px 0px 80px;
-  text-align: center;
-  
+#sobre2 .col-lg-4{
+  padding: 0px;
+}
+#sobre2 p{
   background-color: #1f1f1fCC;
+  font-family: 'Courgette', cursive;
+  text-align: center;
+  font-size: auto;
+  color: #DCD4C4;
+  
 }
 
 
@@ -133,7 +136,7 @@ video{
 
 
 
-/* cardapio section */
+/* cardapio section index */
 #cardapio p{
   color: #4C543C;
 }
@@ -157,6 +160,27 @@ video{
 iframe{
   border-radius: 8px;
 }
+
+
+
+/* menu section */
+#cardapio2{
+  background-image: url(/public/assets/pics/Arte\ com\ comida/24052018-IMG_9208.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#cardapio2 h3{
+  background-color: #1f1f1f80;
+  border-radius: 8px;
+  padding:20px;
+  color: white;
+  text-align: left;
+}
+
+
+
 
 /* download button */
 .btn {
@@ -183,7 +207,7 @@ iframe{
 
 
 
-/* hover for portfolio categories */
+/* hover for menu categories */
 .over {
   position: relative;
 }
@@ -223,6 +247,13 @@ iframe{
 }
 
 
+
+.w-socials h3{
+  font-size: 15px;
+}
+#map{
+  border-radius: 8px;
+}
 
 
 
