@@ -248,10 +248,11 @@ iframe{
 
 
 
-.w-socials h3{
+.w-socials h3 {
+  text-align: left;
   font-size: 15px;
 }
-#map{
+#map {
   border-radius: 8px;
 }
 
