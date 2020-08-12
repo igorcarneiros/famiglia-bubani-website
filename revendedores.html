@@ -1,292 +1,383 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Famiglia Bubani</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Famiglia Bubani</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <script src="/bootstrap/js/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet"> 
-     
-        <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/public/favicons/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-    </head>
-    <body>
-        <a name="top"></a>
+    <link rel="apple-touch-icon" sizes="57x57" href="/public/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/public/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/public/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/public/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/public/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/public/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/public/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/public/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/public/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-        <div id="mySidepanel" class="sidepanel">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-            <li class="nav-item">
-                <a class="menu" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="menu" href="/loja.html">Loja</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu" href="#">Revendedores</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu" href="/cardapio.html">Cardápio</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu" href="/contato.html">Contato</a>
-            </li>
-          </div>
-          
-          <script>
-          function openNav() {
+</head>
+
+<body>
+    <a name="top"></a>
+
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <li class="nav-item">
+            <a class="menu" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/loja.html">Loja</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="#">Revendedores</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/cardapio.html">Cardápio</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu" href="/contato.html">Contato</a>
+        </li>
+    </div>
+
+    <script>
+        function openNav() {
             document.getElementById("mySidepanel").style.width = "250px";
-          }
-          
-          function closeNav() {
+        }
+
+        function closeNav() {
             document.getElementById("mySidepanel").style.width = "0";
-          }
-          </script>
+        }
+    </script>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class=" navbar-brand" href="/index.html">
-                <img src="/public/assets/Logomarca Famiglia Bubani.png">
-            </a>
-
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/loja.html">Loja</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Revendedores</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/cardapio.html">Cardápio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contato.html">Contato</a>
-                    </li>
-                </ul>
-            </div>
-
-            <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>  
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class=" navbar-brand" href="/index.html">
+            <img src="/public/assets/Logomarca Famiglia Bubani.png">
+        </a>
 
 
-        <section id="revendedores">
-            <div class="container-fluid text-center margin">
-                <h2>Revendedores</h2>
-                <div class="container">
-                    <br>
-                    <div class="row ">
-                        <div class="col-lg-4">
-                            <h3 class="text-center">&nbsp;&nbsp;&nbsp;Belo Horizonte</h3><br>
-                            <p> Gutierrez/Grajaú<br>
-                                • Famiglia Bubani <br>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/loja.html">Loja</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Revendedores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
+    </nav>
+
+
+    <section id="revendedores">
+        <div class="container-fluid text-center margin">
+            <h2>Revendedores</h2> <br>
+            <div class="limite row">
+                <div class="tab col-lg-4">
+                    <div class="subnav">
+                        <button class="tablinks subnavbtn">Belo Horizonte &nbsp;<i
+                                class="fa fa-caret-down"></i></button>
+                        <div class="subnav-content">
+                            <a class="tablinks" onclick="openCity(event, 'sc1')">Gutierrez/Grajaú</a>
+                            <a class="tablinks" onclick="openCity(event, 'sc2')">Santo Agostinho/Lourdes</a>
+                            <a class="tablinks" onclick="openCity(event, 'sc3')">Savassi/Funcionários</a>
+                            <a class="tablinks" onclick="openCity(event, 'sc4')">Cidade Jardim/São Bento</a>
+                            <a class="tablinks" onclick="openCity(event, 'sc5')">Cidade Nova</a>
+                        </div>
+                    </div>
+                    <button class="tablinks" onclick="openCity(event, 'ds')">Grande BH</button>
+                    <button class="tablinks" onclick="openCity(event, 'fls')">Outras cidades</button>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div id="sc1" class="tabcontent">
+                        <p class="example">
+                            • Famiglia Bubani <br>
                             Rua General Dionísio Cerqueira, 306 – Gutierrez <br>
                             Whatsapp (31) 99273 0000 <br><br>
-                                • Empório da Tella <br>
+                            • Empório da Tella <br>
                             Rua Paula Cândido, 410 – Grajaú <br>
-                            Whatsapp (31) 99535 4119 <br><br>
-                            Santo Agostinho/Lourdes <br>
-                                • Empório du Carmo <br>
+                            Whatsapp (31) 99535 4119
+                        </p>
+                    </div>
+
+                    <div id="sc2" class="tabcontent">
+                        <p>
+                            • Empório du Carmo <br>
                             End. Rua Rodrigues Caldas, 525 <br>
                             Tel. (31) 3582 1919 <br>
                             Whatsapp (31) 98303 1703 <br><br>
-                                • Hipper Frios <br>
+                            • Hipper Frios <br>
                             End. Rua Marília de Dirceu, 240 – Lourdes <br>
-                            Tel. (31) 3213 4082 <br><br>
-                            Savassi/Funcionários <br>
-                                • Empório Ki Delícia <br>
+                            Tel. (31) 3213 4082
+                        </p>
+                    </div>
+
+                    <div id="sc3" class="tabcontent">
+                        <p>
+                            • Empório Ki Delícia <br>
                             Rua Ceará, 1111 – Funcionários <br>
                             Tel. (31) 4104 0254 <br><br>
-                                • Fazenda de Minas <br>
+                            • Fazenda de Minas <br>
                             End. Rua Santa Rita Durão, 941 – Funcionários <br>
                             Tel. (31) 3656 8240 <br>
                             Whatsapp (31) 96346 3946 <br><br>
-                                • Spiral com Café <br>
+                            • Spiral com Café <br>
                             End. Av. Carandaí, 418, lj. 3 – Funcionários <br>
-                            Tel. (31) 3224 1809 <br><br>
-                            Cidade Jardim/São Bento <br>
-                                • Empório du Carmo <br>
+                            Tel. (31) 3224 1809
+                        </p>
+                    </div>
+                    <div id="sc4" class="tabcontent">
+                        <p>
+                            • Empório du Carmo <br>
                             End. Av. Prudente de Morais, 590 <br>
                             Tel. (31) 3344 0587 <br>
                             Whatsapp (31) 98807 0696 <br><br>
-                                • Mierim <br>
+                            • Mierim <br>
                             Av. Raja Gabaglia, 2000, lj. 7, torre 2 <br>
                             Tel. (31) 3214 1717 <br><br>
-                                • Terra Nossa <br>
+                            • Terra Nossa <br>
                             End. Av. Consul Antônio Cadar, 122, lj. 45 – Center São Bento, São Bento <br>
                             Tel. (31) 2512 1061 <br>
-                            Whatsapp (31) 99841 0370 <br><br>
-                            Cidade Nova <br>
-                                • Hipper Frios  <br>
+                            Whatsapp (31) 99841 0370
+                        </p>
+                    </div>
+                    <div id="sc5" class="tabcontent">
+                        <p>
+                            • Hipper Frios <br>
                             End. Av. Cristiano Machado, 1950 – Feira dos Produtores, Cidade Nova <br>
                             Tel. (31) 3483 5357 <br><br>
                             Lojas Virtuais <br>
-                                • Wine in Home <br>
-                                Instagram @wineinhomebh <br>
-                            </p>
+                            • Wine in Home <br>
+                            Instagram @wineinhomebh
+                        </p>
+                    </div>
 
+                    <div id="ds" class="tabcontent">
+                        <p>
+                            • Confraria Casa Branca <br>
+                            Rua Um, 30 – Casa Branca, Brumadinho <br>
+                            Whatsapp (31) 99899 9554 <br><br>
+                            • Expresso Delivery <br>
+                            End. Av. Casa Branca, 524 B – Casa Branca, Brumadinho <br>
+                            Whatsapp (31) 99855 5150 <br><br>
+                            • Posto Select <br>
+                            Rodovia Januário Carneiro, 3480 – Bosque do Jambreiro, Nova Lima <br><br>
+                            • Wine in Home Igarapé <br>
+                            Rua Miguel Henriques da Silva, 991 – Igarapé <br>
+                            Whatsapp (31) 97166 8778 <br>
+                        </p>
+                    </div>
 
-                        </div>
-                        <div class="col-lg-4">
-                            <h3 class="text-center">&nbsp;&nbsp;&nbsp;Grande BH</h3><br>
-                                <p>
-                                    • Confraria Casa Branca <br>
-                                    Rua Um, 30 – Casa Branca, Brumadinho <br>
-                                    Whatsapp (31) 99899 9554 <br><br>
-                                        • Expresso Delivery <br>
-                                    End. Av. Casa Branca, 524 B – Casa Branca, Brumadinho <br>
-                                    Whatsapp (31) 99855 5150  <br><br>
-                                        • Posto Select <br>
-                                    Rodovia Januário Carneiro, 3480 – Bosque do Jambreiro, Nova Lima <br><br>
-                                        • Wine in Home Igarapé <br>
-                                    Rua Miguel Henriques da Silva, 991 – Igarapé <br>
-                                    Whatsapp (31) 97166 8778 <br>
-                                </p>
-                        </div>
+                    <div id="fls" class="tabcontent">
+                        <p class="example">
+                            • Iracema Pouso Agroecológico <br>
+                            End. Estrada para Chapada (0,00 km) – Ouro Preto <br>
+                            Whatsapp (31) 98945 9371 <br> <br>
+                            • Wine in Home Porteirinha <br>
+                            End. Rua Washington Luiz, 63 C – Centro, Porteirinha <br>
+                            Whatsapp (38) 99977 3309 <br><br>
+                            • Sabor Frios Gourmet – Villa da Serra <br>
 
+                            End. Alameda Oscar Niemeyer 1033, lj 19 <br>
+                            Tel. (31) 3789 5686 <br> <br>
 
-                        <div class="col-lg-4">
-                            <h3 class="text-center">&nbsp;&nbsp;&nbsp;Outras cidades</h3><br>
-                            <p>
-                                • Iracema Pouso Agroecológico <br>
-                                End. Estrada para Chapada (0,00 km) – Ouro Preto <br>
-                                Whatsapp (31) 98945 9371 <br> <br>
-                                    • Wine in Home Porteirinha <br>
-                                End. Rua Washington Luiz, 63 C – Centro, Porteirinha <br>
-                                Whatsapp (38) 99977 3309 <br><br>
-                                • Sabor Frios Gourmet – Villa da Serra <br>
+                            • Sabor Frios Gourmet – Mercado Central <br>
 
-                                End. Alameda Oscar Niemeyer 1033, lj 19 <br>
-                                Tel. (31) 3789 5686 <br> <br>
-                                
-                                    • Sabor Frios Gourmet – Mercado Central <br>
-                                
-                                End. Mercado Central – lj 41 <br>
-                                Tel. (31)3274 9582              <br>                   
-                            </p>
-                        </div>
-
+                            End. Mercado Central – lj 41 <br>
+                            Tel. (31)3274 9582 <br>
+                        </p>
                     </div>
                 </div>
+
+                <script>
+                    function openCity(evt, cityName) {
+                        var i,
+                            tabcontent,
+                            tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for (i = 0; i < tabcontent.length; i++) {
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for (i = 0; i < tablinks.length; i++) {
+                            tablinks[i].className = tablinks[i]
+                                .className
+                                .replace(" active", "");
+                        }
+                        document
+                            .getElementById(cityName)
+                            .style
+                            .display = "block";
+                        evt.currentTarget.className += " active";
+                    }
+
+                    // Get the element with id="defaultOpen" and click on it
+                    document
+                        .getElementById("defaultOpen")
+                        .click();
+                </script>
+
+                <div class="col-lg-4 text-left">
+                    <form action="https://formspree.io/xbjzbkoe" method="POST">
+                        <label for="fname">
+                            <h3>Nome e sobrenome</h3>
+                        </label>
+                        <input type="text" class="selected" id="fname" name="firstname" placeholder="Digite seu nome e sobrenome">
+                                    
+                        <label for="lname">
+                            <h3>E-mail</h3>
+                        </label>
+                        <input type="text" class="selected" id="lname" name="email" placeholder="Digite seu E-mail">
+                        
+                        <label for="cidade">
+                            <h3>Cidade</h3>
+                        </label>
+                        <select id="RJ" name="cidade">
+                            <option class="selected" value="Rio de Janeiro">Belo Horizonte</option>
+                            <option class="selected" value="Campos dos Goycatazes">Grande BH</option>
+                            <option class="selected" value="Outro">Outras cidades</option>
+                        </select>
+                       
+                        <label for="subject">
+                            <h3>Mensagem</h3>
+                        </label>
+                        <textarea class="selected" id="subject" name="subject" placeholder="Digite sua mensagem"
+                            style="height:200px"></textarea>
+                       
+                        <input class="test" type="submit" value="Enviar">
+                        <input class="test" type="reset" value="Resetar">
+                    </form>
+                </div>
             </div>
-        </section>
+    </section>
 
 
+    <div class="container-fluid text-center margin navbar cardapio">
+        <div class="container">
+            <div class="row">
 
+                <div class="col-lg-4">
+                    <h4>Famiglia Bubani</h4>
+                    <br>
+                    <p class="w-socials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac
+                        tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante.
+                        Suspendisse id tempor elit. Nunc porttitor eleifend nisl id blandit. Sed dapibus bibendum
+                        gravida. Phasellus fermentum pulvinar ante nec pretium.</p>
+                </div>
 
-        <div class="container-fluid text-center margin navbar cardapio">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-lg-4">
-                        <h4>Famiglia Bubani</h4>
-                        <br>
-                        <p class="w-socials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante. Suspendisse id tempor elit. Nunc porttitor eleifend nisl id blandit. Sed dapibus bibendum gravida. Phasellus fermentum pulvinar ante nec pretium.</p>
+                <div class="col-lg-4">
+                    <h4>Menu
+                        <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
+                    </h4>
+                    <br>
+                    <div class="footer-menu">
+                        <ul>
+                            <li>
+                                <a href="/index.html">Início</a>
+                            </li>
+                            <li>
+                                <a href="/quemsomos.html">Quem Somos</a>
+                            </li>
+                            <li>
+                                <a href="/loja.html">Loja</a>
+                            </li>
+                            <li>
+                                <a href="#">Revendedores</a>
+                            </li>
+                            <li>
+                                <a href="/cardapio.html">Cardapio</a>
+                            </li>
+                            <li>
+                                <a href="/contato.html">Contato</a>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="col-lg-4">
-                        <h4>Menu
-                            <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                        </h4>
+                <div class="col-lg-4">
+                    <div id="contact-2" class="widget widget_contact">
+                        <h4>Contato</h4>
                         <br>
-                        <div class="footer-menu">
-                            <ul >
-                                <li >
-                                    <a href="/index.html">Início</a>
-                                </li>
-                                <li >
-                                    <a href="/quemsomos.html">Quem Somos</a>
-                                </li>
-                                <li >
-                                    <a href="/loja.html">Loja</a>
-                                </li>
-                                <li >
-                                    <a href="#">Revendedores</a>
-                                </li>
-                                <li >
-                                    <a href="/cardapio.html">Cardapio</a>
-                                </li>
-                                <li >
-                                    <a href="/contato.html">Contato</a>
-                                </li>
-                            </ul>
+                        <div class="w-contacts-item">
+                            <i class="fa fa-map-marker"></i>
+                            <span class="w-socials" title="Endereço">&nbsp;Rua General Dionisío Cerqueira 306,
+                                Gutierrez, Belo Horizonte - MG</span>
+                        </div>
+
+                        <div class="w-contacts-item for_phone">
+                            <i class="fa fa-phone"></i>
+                            <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 99273-0000</span>
+                        </div>
+
+                        <div class="w-contacts-item for_email">
+                            <i class="fa fa-envelope"></i>
+                            <span class="w-socials">
+                                <a href="mailto:famigliabubani@gmail.com"
+                                    title="E-mail">&nbsp;famigliabubani@gmail.com</a>
+                            </span>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
-                        <div id="contact-2" class="widget widget_contact">
-                            <h4>Contato</h4>
-                            <br>
-                            <div class="w-contacts-item">
-                                <i class="fa fa-map-marker"></i>
-                                <span class="w-socials" title="Endereço">&nbsp;Rua General Dionisío Cerqueira 306, Gutierrez, Belo Horizonte - MG</span>
-                            </div>
-
-                            <div class="w-contacts-item for_phone">
-                                <i class="fa fa-phone"></i>
-                                <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 99273-0000</span>
-                            </div>
-
-                            <div class="w-contacts-item for_email">
-                                <i class="fa fa-envelope"></i>
-                                <span class="w-socials">
-                                    <a href="mailto:famigliabubani@gmail.com" title="E-mail">&nbsp;famigliabubani@gmail.com</a>
-                                </span>
-                            </div>
+                    <br>
+                    <div class="w-socials">
+                        <div class="socialm">
+                            <a href="https://www.instagram.com/famigliabubani" target="_blank">
+                                <img src="/public/assets/instagram.png" width="40px" title="Instagram">
+                            </a>
                         </div>
-                        <br>
-                        <div class="w-socials">
-                            <div class="socialm">
-                                <a href="https://www.instagram.com/famigliabubani" target="_blank">
-                                    <img src="/public/assets/instagram.png" width="40px" title="Instagram">
-                                </a>
-                            </div>
-                            &nbsp;
-                            <div class="socialm">
-                                <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
-                                    <img src="/public/assets/facebook.png" width="40px" title="Facebook">
-                                </a>
-                            </div>
+                        &nbsp;
+                        <div class="socialm">
+                            <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
+                                <img src="/public/assets/facebook.png" width="40px" title="Facebook">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     </div>
-</div>
+    </div>
 
-<footer class="container-fluid text-center margin bg-footer">
-    Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos reservados.
-</footer>
+    <footer class="container-fluid text-center margin bg-footer">
+        Copyright© 2020 <a href="http://www.kriari.net/" target="_blank">Kriari Informática</a>. Todos os direitos
+        reservados.
+    </footer>
 
 
 </body>
+
 </html>
