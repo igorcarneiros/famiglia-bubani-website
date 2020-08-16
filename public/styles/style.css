@@ -43,11 +43,37 @@ p{
   padding-bottom: 50px;
 }
 
+
+
+/* index */
+#index-image-back {
+  background-image: url(/public/assets/pics/Arte\ com\ comida/24052018-IMG_9208.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#video {
+  text-align: center;
+ }
+
 video{
   z-index: 1;
   width: 100%;
   height: auto;
   max-height: 500px;
+}
+
+@media (min-width: 891px) {
+  #video {
+  padding: 50px;
+  }
+
+  video {
+    border-radius: 8px;
+    width: auto;
+  }
 }
 
 
@@ -68,7 +94,7 @@ video{
   padding: 10%;
   
   text-align: center;
-  font-size: auto;
+  font-size: 15px;
   color: #DCD4C4;
 }
 #sobre .poema h4 {
@@ -81,44 +107,22 @@ video{
 
 
 
-/* Style the tab */
-.tab {
-  float: left;
- 
-  width: 100%;
-  height: 100%;
-  background-color: #bebebe49;
- border-radius: 8px;
- padding: 0;
-}
-.tablinks {
-  border-radius: 8px;
-}
-.limite .col-lg-6{
-  padding: 0px;
-}
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  
-  
-  padding: 22px 16px;
-  width: 100%;
+/* Style the buttons inside the Revendedores tab */
+.tab button { 
+  border-radius: 8px;
+  padding: 20px 10px;
+  width: 300px;
   border: none;
   outline: none;
-  text-align: center;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 14px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
   border-radius: 8px;
   background-color: #bebebe80;
-  
-  
 }
 
 /* Create an active/current "tab button" class */
@@ -133,16 +137,24 @@ video{
 .subnav-content {
   display: none;
   position: relative;
+
   
-  
- 
-  width: 100%;
+
+  padding: 20px 25%;
+  width: 300px;
   border: none;
   outline: none;
   text-align: center;
   cursor: pointer;
   transition: 0.3s;
   font-size: 14px;
+}
+
+.subnav-content .tablinks {
+ display: grid;
+  padding: 5px 5px;
+  width: 200px;
+
 }
 .subnav:hover .subnav-content {
   display: grid;
@@ -154,12 +166,8 @@ video{
 .subnav-content a.active {
   background-color: #AB4C2C;
   color: white;
- border-radius: 8px; b
+ border-radius: 8px;
 }
-
-
-
-/* Style the tab content */
 
 
 
@@ -222,8 +230,9 @@ video{
   background-attachment: fixed;
 }
 #cardapio2 h3{
-  background-color: #1f1f1f80;
+  background-color: #1f1f1fad;
   border-radius: 8px;
+  font-size: 15px;
   padding:20px;
   color: white;
   text-align: left;
@@ -247,6 +256,7 @@ video{
   margin-top: 30px;
   text-align: center;
   margin-bottom: 20px;
+  
 }
 iframe{
   border-radius: 8px;
@@ -273,7 +283,6 @@ iframe{
   text-decoration: none;
   color: white;
 }
-
 
 
 
@@ -444,4 +453,81 @@ input[type=reset] {
 
 input[type=reset]:hover {
   background-color: #4C543C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#qsr {
+  padding: 20px;
+  cursor: pointer;
+  background-color: #95a575;
+  color: white;
+ 
+  border-radius: 40px;
+  transition: 400ms;
+  border: 0;
+}
+
+#qsr:hover {
+  background-color: #4C543C;
+}
+
+#modal{
+  background-color: #2a3611ef;
+
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: center;
+
+  transition: 400ms;
+}
+#modal.hide{
+  display: none;
+}
+#modal .content{
+  color: white;
+
+  width: 55%;
+}
+#modal .header{
+  padding-top: 5%;
+  
+  display: flex;
+  align-items: center;
+  
+}
+#modal .header a{
+  background-image: url(/public/assets/x.svg);
+  
+  width: 20px;
+  height: 20px;
+
+
+  font-size: 0.01px;
+}
+#modal .header h1 {
+  color: white;
+
+  font-size: 100%;
+  line-height: 42px;
+}
+#modal h3 {
+  color: white;
+  font-size: 100%;
 }

@@ -118,10 +118,9 @@
                     </div>
                     <button class="tablinks" onclick="openCity(event, 'ds')">Grande BH</button>
                     <button class="tablinks" onclick="openCity(event, 'fls')">Outras cidades</button>
-
                 </div>
 
-                <div class="col-lg-4">
+                <div class="col-lg-4"> <br>
                     <div id="sc1" class="tabcontent">
                         <p class="example">
                             • Famiglia Bubani <br>
@@ -250,37 +249,12 @@
                         .click();
                 </script>
 
-                <div class="col-lg-4 text-left">
-                    <form action="https://formspree.io/xbjzbkoe" method="POST">
-                        <label for="fname">
-                            <h3>Nome e sobrenome</h3>
-                        </label>
-                        <input type="text" class="selected" id="fname" name="firstname" placeholder="Digite seu nome e sobrenome">
-                                    
-                        <label for="lname">
-                            <h3>E-mail</h3>
-                        </label>
-                        <input type="text" class="selected" id="lname" name="email" placeholder="Digite seu E-mail">
-                        
-                        <label for="cidade">
-                            <h3>Cidade</h3>
-                        </label>
-                        <select id="RJ" name="cidade">
-                            <option class="selected" value="Rio de Janeiro">Belo Horizonte</option>
-                            <option class="selected" value="Campos dos Goycatazes">Grande BH</option>
-                            <option class="selected" value="Outro">Outras cidades</option>
-                        </select>
-                       
-                        <label for="subject">
-                            <h3>Mensagem</h3>
-                        </label>
-                        <textarea class="selected" id="subject" name="subject" placeholder="Digite sua mensagem"
-                            style="height:200px"></textarea>
-                       
-                        <input class="test" type="submit" value="Enviar">
-                        <input class="test" type="reset" value="Resetar">
-                    </form>
+                <div class="col-lg-4">
+                    <button id="qsr">
+                        <h1>🍝 Seja um revendedor!</h1>
+                    </button>
                 </div>
+
             </div>
     </section>
 
@@ -292,10 +266,9 @@
                 <div class="col-lg-4">
                     <h4>Famiglia Bubani</h4>
                     <br>
-                    <p class="w-socials">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lobortis ligula ac
-                        tortor consectetur sagittis. Proin sem tellus, iaculis sed fermentum eget, sagittis vel ante.
-                        Suspendisse id tempor elit. Nunc porttitor eleifend nisl id blandit. Sed dapibus bibendum
-                        gravida. Phasellus fermentum pulvinar ante nec pretium.</p>
+                    <p class="w-socials">A Famiglia Bubani é uma empresa familiar de produção de massas artesanais.
+                        Chegamos da Itália em 1953, quando trouxemos de Faença, na Emília Romanha, para Belo Horizonte,
+                        as tradições culinárias dessa região.</p>
                 </div>
 
                 <div class="col-lg-4">
@@ -378,6 +351,61 @@
     </footer>
 
 
+    <div id="modal" class="hide">
+        <div class="content">
+            <div class="header">
+                <a href="#">Fechar</a>
+                <h1>&nbsp; Seja um revendedor!</h1>
+
+            </div>
+            <div class="me">
+                <form action="https://formspree.io/xbjzbkoe" method="POST">
+                    <label for="fname">
+                        <h3>Nome completo</h3>
+                    </label>
+                    <input type="text" class="selected" id="fname" name="firstname"
+                        placeholder="Digite seu nome completo">
+
+                    <label for="lname">
+                        <h3>E-mail</h3>
+                    </label>
+                    <input type="text" class="selected" id="lname" name="email" placeholder="Digite seu E-mail">
+
+                    <label for="cidade">
+                        <h3>Cidade</h3>
+                    </label>
+                    <select id="RJ" name="cidade">
+                        <option class="selected" value="Rio de Janeiro">Belo Horizonte</option>
+                        <option class="selected" value="Campos dos Goycatazes">Grande BH</option>
+                        <option class="selected" value="Outro">Outras cidades</option>
+                    </select>
+
+                    <label for="subject">
+                        <h3>Mensagem</h3>
+                    </label>
+                    <textarea class="selected" id="subject" name="subject" placeholder="Digite sua mensagem"
+                        style="height:200px"></textarea>
+
+                    <input class="test" type="submit" value="Enviar">
+                    <input class="test" type="reset" value="Resetar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const buttonSearch = document.querySelector("#qsr")
+        const modal = document.querySelector("#modal")
+        const close = document.querySelector("#modal .header a")
+
+
+        buttonSearch.addEventListener("click", () => {
+            modal.classList.remove("hide")
+        })
+
+        close.addEventListener("click", () => {
+            modal.classList.add("hide")
+        })
+    </script>
 </body>
 
 </html>
