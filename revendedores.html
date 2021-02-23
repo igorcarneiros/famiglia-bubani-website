@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/1d4c77c3a3.js" crossorigin="anonymous"></script>
     <script src="/bootstrap/js/bootstrap.js"></script>
 
     <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
@@ -47,14 +47,18 @@
             <a class="menu" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
+            <a class="menu" href="/cardapio.html">Cardápio</a>
+        </li>
+        <li class="nav-item">
             <a class="menu" href="/loja.html">Loja</a>
         </li>
         <li class="nav-item">
             <a class="menu" href="#">Revendedores</a>
         </li>
-        <li class="nav-item">
-            <a class="menu" href="/cardapio.html">Cardápio</a>
+        <li>
+            <a class="menu" href="/sejarevendedor.html">Seja um revendedor</a>
         </li>
+
         <li class="nav-item">
             <a class="menu" href="/contato.html">Contato</a>
         </li>
@@ -82,14 +86,18 @@
                     <a class="nav-link" href="/quemsomos.html">Quem Somos<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/loja.html">Loja</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Revendedores</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/cardapio.html">Cardápio</a>
+                <li>
+                    <a class="nav-link" href="/sejarevendedor.html">Seja um revendedor</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link" href="/contato.html">Contato</a>
                 </li>
@@ -106,148 +114,184 @@
             <div class="limite row">
                 <div class="tab col-lg-4">
                     <div class="subnav">
-
-                        <button id="qsr">Seja um revendedor!</button> <br><br>
-
-                        <button class="tablinks subnavbtn">Belo Horizonte &nbsp;<span>&#8675;</span></button>
-                        <button class="tablinks tab2" onclick="openCity(event, 'sc1')" id="defaultOpen">Gutierrez/Grajaú</button>
+                        <button class="tablinks" onclick="openCity(event, 'sc0')" id="defaultOpen">Belo
+                            Horizonte</button>
+                        <button class="tablinks tab2" onclick="openCity(event, 'sc1')">Gutierrez/Grajaú</button>
                         <button class="tablinks tab2" onclick="openCity(event, 'sc2')">Santo Agostinho/Lourdes</button>
                         <button class="tablinks tab2" onclick="openCity(event, 'sc3')">Savassi/Funcionários</button>
                         <button class="tablinks tab2" onclick="openCity(event, 'sc4')">Cidade Jardim/São Bento</button>
                         <button class="tablinks tab2" onclick="openCity(event, 'sc5')">Cidade Nova</button>
-                        <br><br>
                         <button class="tablinks" onclick="openCity(event, 'ds')">Grande BH</button>
                         <button class="tablinks" onclick="openCity(event, 'fls')">Outras cidades</button>
+                        <button class="tablinks" onclick="openCity(event, 'lv')">Lojas Virtuais</button><br><br>
+                        <button class="tablinks" onclick="openCity(event, 'dv')">Delivery</button>
                     </div>
                 </div>
                 <div class="col-lg-4"> <br>
+                    <div id="sc0" class="tabcontent">
+                        <p class="example">
+
+                        </p>
+                    </div>
+
                     <div id="sc1" class="tabcontent">
                         <p class="example">
-                            • Famiglia Bubani <br>
-                            Rua General Dionísio Cerqueira, 306 – Gutierrez <br>
-                            Whatsapp (31) 99273 0000 <br><br>
-                            • Empório da Tella <br>
-                            Rua Paula Cândido, 410 – Grajaú <br>
-                            Whatsapp (31) 99535 4119
+                            <span class="rev">Famiglia Bubani</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua General Dionísio Cerqueira, 306 – Gutierrez <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99273 0000 <br><br>
+                            <span class="rev">Empório da Tella</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Paula Cândido, 410 – Grajaú <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99535 4119
                         </p>
                     </div>
 
                     <div id="sc2" class="tabcontent">
                         <p>
-                            • Empório du Carmo <br>
-                            End. Rua Rodrigues Caldas, 525 <br>
-                            Tel. (31) 3582 1919 <br>
-                            Whatsapp (31) 98303 1703 <br><br>
-                            • Hipper Frios <br>
-                            End. Rua Marília de Dirceu, 240 – Lourdes <br>
-                            Tel. (31) 3213 4082
+                            <span class="rev">Empório du Carmo</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Rodrigues Caldas, 525 <br>
+                            <i class="fa fa-phone"></i> (31) 3582 1919 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 98303 1703 <br><br>
+                            <span class="rev"> Hipper Frios</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Marília de Dirceu, 240 – Lourdes <br>
+                            <i class="fa fa-phone"></i> (31) 3213 4082
                         </p>
                     </div>
 
                     <div id="sc3" class="tabcontent">
                         <p>
-                            • Empório Ki Delícia <br>
-                            Rua Ceará, 1111 – Funcionários <br>
-                            Tel. (31) 4104 0254 <br><br>
-                            • Fazenda de Minas <br>
-                            End. Rua Santa Rita Durão, 941 – Funcionários <br>
-                            Tel. (31) 3656 8240 <br>
-                            Whatsapp (31) 96346 3946 <br><br>
-                            • Spiral com Café <br>
-                            End. Av. Carandaí, 418, lj. 3 – Funcionários <br>
-                            Tel. (31) 3224 1809
+                            <span class="rev"> Empório Ki Delícia</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Ceará, 1111 – Funcionários <br>
+                            <i class="fa fa-phone"></i> (31) 4104 0254 <br><br>
+                            <span class="rev"> Fazenda de Minas</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Santa Rita Durão, 941 – Funcionários <br>
+                            <i class="fa fa-phone"></i> (31) 3656 8240 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 96346 3946 <br><br>
+                            <span class="rev"> Spiral com Café</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Carandaí, 418, lj. 3 – Funcionários <br>
+                            <i class="fa fa-phone"></i> (31) 3224 1809
                         </p>
                     </div>
                     <div id="sc4" class="tabcontent">
                         <p>
-                            • Empório du Carmo <br>
-                            End. Av. Prudente de Morais, 590 <br>
-                            Tel. (31) 3344 0587 <br>
-                            Whatsapp (31) 98807 0696 <br><br>
-                            • Mierim <br>
-                            Av. Raja Gabaglia, 2000, lj. 7, torre 2 <br>
-                            Tel. (31) 3214 1717 <br><br>
-                            • Terra Nossa <br>
-                            End. Av. Consul Antônio Cadar, 122, lj. 45 – Center São Bento, São Bento <br>
-                            Tel. (31) 2512 1061 <br>
-                            Whatsapp (31) 99841 0370
+                            <span class="rev"> Empório du Carmo</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Prudente de Morais, 590 <br>
+                            <i class="fa fa-phone"></i> (31) 3344 0587 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 98807 0696 <br><br>
+                            <span class="rev"> Mierim</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Raja Gabaglia, 2000, lj. 7, torre 2 <br>
+                            <i class="fa fa-phone"></i> (31) 3214 1717 <br><br>
+                            <span class="rev"> Terra Nossa</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Consul Antônio Cadar, 122, lj. 45 – Center São Bento,
+                            São Bento <br>
+                            <i class="fa fa-phone"></i> (31) 2512 1061 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99841 0370
                         </p>
                     </div>
                     <div id="sc5" class="tabcontent">
                         <p>
-                            • Hipper Frios <br>
-                            End. Av. Cristiano Machado, 1950 – Feira dos Produtores, Cidade Nova <br>
-                            Tel. (31) 3483 5357 <br><br>
-                            Lojas Virtuais <br>
-                            • Wine in Home <br>
-                            Instagram @wineinhomebh
+                            <span class="rev">Hipper Frios</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Cristiano Machado, 1950 – Feira dos Produtores, Cidade
+                            Nova <br>
+                            <i class="fa fa-phone"></i> (31) 3483 5357 <br><br>
                         </p>
                     </div>
 
                     <div id="ds" class="tabcontent">
                         <p>
-                            • Confraria Casa Branca <br>
-                            Rua Um, 30 – Casa Branca, Brumadinho <br>
-                            Whatsapp (31) 99899 9554 <br><br>
-                            • Expresso Delivery <br>
-                            End. Av. Casa Branca, 524 B – Casa Branca, Brumadinho <br>
-                            Whatsapp (31) 99855 5150 <br><br>
-                            • Posto Select <br>
-                            Rodovia Januário Carneiro, 3480 – Bosque do Jambreiro, Nova Lima <br><br>
-                            • Wine in Home Igarapé <br>
-                            Rua Miguel Henriques da Silva, 991 – Igarapé <br>
-                            Whatsapp (31) 97166 8778 <br>
+                            <span class="rev">Confraria Casa Branca</span><br>
+                            <i class="fa fa-map-marker"></i> Rua Um, 30 – Casa Branca, Brumadinho <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99899 9554 <br><br>
+                            <span class="rev"> Expresso Delivery</span> <br>
+                            <i class="fa fa-map-marker"></i> Av. Casa Branca, 524 B – Casa Branca, Brumadinho <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99855 5150 <br><br>
+                            <span class="rev">Posto Select</span> <br>
+                            <i class="fa fa-map-marker"></i> Rodovia Januário Carneiro, 3480 – Bosque do Jambreiro, Nova
+                            Lima <br><br>
+                            <span class="rev"> Wine in Home Igarapé</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Miguel Henriques da Silva, 991 – Igarapé <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 97166 8778 <br>
                         </p>
                     </div>
 
                     <div id="fls" class="tabcontent">
                         <p class="example">
-                            • Iracema Pouso Agroecológico <br>
-                            End. Estrada para Chapada (0,00 km) – Ouro Preto <br>
-                            Whatsapp (31) 98945 9371 <br> <br>
-                            • Wine in Home Porteirinha <br>
-                            End. Rua Washington Luiz, 63 C – Centro, Porteirinha <br>
-                            Whatsapp (38) 99977 3309 <br><br>
-                            • Sabor Frios Gourmet – Villa da Serra <br>
-
-                            End. Alameda Oscar Niemeyer 1033, lj 19 <br>
-                            Tel. (31) 3789 5686 <br> <br>
-
-                            • Sabor Frios Gourmet – Mercado Central <br>
-
-                            End. Mercado Central – lj 41 <br>
-                            Tel. (31)3274 9582 <br>
+                            <span class="rev"> Wine in Home Porteirinha</span> <br>
+                            <i class="fa fa-map-marker"></i> Rua Washington Luiz, 63 C – Centro, Porteirinha <br>
+                            <img src="/public/assets/zap.png" width="30px"> (38) 99977 3309 <br><br>
+                            <span class="rev">Dummond</span> <br>
+                            <i class="fa fa-map-marker"></i> Nova Lima / Vila da Serra – Rua da Paisagem, 45 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 3658 9348 <br><br>
+                            <span class="rev">Tradição da Carne</span> <br>
+                            <i class="fa fa-map-marker"></i> Contagem / Cabral – Alameda dos Rouxinois, 285, lj 13 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 3347 3076 <br> <br>
+                            <span class="rev">Expresso Delivery</span> <br>
+                            <i class="fa fa-map-marker"></i> Brumadinho / Casa branca – Av. Casa Branca, 524 – Recanto
+                            da Aldeia <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99855 5150 <br> <br>
+                            <span class="rev">Confraria Casa Branca</span> <br>
+                            <i class="fa fa-map-marker"></i> Brumadinho / Casa branca - R. Um, 30 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 99899-9554 <br> <br>
+                            <span class="rev">Empório Eva Reis</span> <br>
+                            <i class="fa fa-map-marker"></i> Lagoa Santa / Santos Dumont – Rua Comandante Victor, 551
+                            <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 3681 7040 <br> <br>
+                            <span class="rev">Iracema Pouso Agroecológico</span> <br>
+                            <i class="fa fa-map-marker"></i> Ouro Preto / Chapada – Estrada para Chapada, 30 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 98494 2213 <br> <br>
+                            <span class="rev">La Borbulha</span> <br>
+                            <i class="fa fa-map-marker"></i> Itaúna / Centro – Av. José Soares, 712 <br>
+                            <img src="/public/assets/zap.png" width="30px"> (31) 3242 1180 <br> <br>
                         </p>
                     </div>
+
+                    <div id="lv" class="tabcontent">
+                        <p class="example">
+                            <span class="rev"> Wine in Home</span> <br>
+                            <img src="/public/assets/instagram.png" width="40px" title="Instagram"> @wineinhomebh
+                        </p>
+                    </div>
+
+                    <div id="dv" class="tabcontent">
+                        <p>
+                            delivery content
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <div id="qsr">Seja um revendedor!</div> <br><br>
                 </div>
             </div>
-            <script>
-                function openCity(evt, cityName) {
-                    var i,
-                        tabcontent,
-                        tablinks;
-                    tabcontent = document.getElementsByClassName("tabcontent");
-                    for (i = 0; i < tabcontent.length; i++) {
-                        tabcontent[i].style.display = "none";
-                    }
-                    tablinks = document.getElementsByClassName("tablinks");
-                    for (i = 0; i < tablinks.length; i++) {
-                        tablinks[i].className = tablinks[i]
-                            .className
-                            .replace(" active", "");
-                    }
-                    document
-                        .getElementById(cityName)
-                        .style
-                        .display = "block";
-                    evt.currentTarget.className += " active";
-                }
 
-                // Get the element with id="defaultOpen" and click on it
+        </div>
+        <script>
+            function openCity(evt, cityName) {
+                var i,
+                    tabcontent,
+                    tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i]
+                        .className
+                        .replace(" active", "");
+                }
                 document
-                    .getElementById("defaultOpen")
-                    .click();
-            </script>
+                    .getElementById(cityName)
+                    .style
+                    .display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document
+                .getElementById("defaultOpen")
+                .click();
+        </script>
 
 
     </section>
@@ -255,87 +299,86 @@
 
     <div class="container-fluid text-center margin navbar cardapio">
         <div class="container">
-            <div class="row">
 
-                <div class="col-lg-4">
-                    <h4>Famiglia Bubani</h4>
-                    <br>
-                    <p class="w-socials">A Famiglia Bubani é uma empresa familiar de produção de massas artesanais.
-                        Chegamos da Itália em 1953, quando trouxemos de Faença, na Emília Romanha, para Belo Horizonte,
-                        as tradições culinárias dessa região.</p>
+            <div class="col-lg-4">
+                <img src="/public/assets/Logomarca Famiglia Bubani.png" width="150px">
+            </div>
+            <div class="col-lg-4">
+                <h4>Menu
+                    <a href="#top" class='fas' title="Voltar ao topo">&#8673;</a>
+                </h4>
+                <br>
+                <div class="footer-menu">
+                    <ul>
+                        <li>
+                            <a href="#">Início</a>
+                        </li>
+                        <li>
+                            <a href="/quemsomos.html">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="/cardapio.html">Cardápio</a>
+                        </li>
+                        <li>
+                            <a href="/loja.html">Loja</a>
+                        </li>
+                        <li>
+                            <a href="/revendedores.html">Revendedores</a>
+                        </li>
+                        <li>
+                            <a href="/sejarevendedor.html">Seja um revendedor</a>
+                        </li>
+
+                        <li>
+                            <a href="/contato.html">Contato</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <h4>Menu
-                        <a href="#top" class='fas' title="Voltar ao topo">&#xf102;</a>
-                    </h4>
+            <div class="col-lg-4">
+                <div id="contact-2" class="widget widget_contact">
+                    <h4>Contato</h4>
                     <br>
-                    <div class="footer-menu">
-                        <ul>
-                            <li>
-                                <a href="/index.html">Início</a>
-                            </li>
-                            <li>
-                                <a href="/quemsomos.html">Quem Somos</a>
-                            </li>
-                            <li>
-                                <a href="/loja.html">Loja</a>
-                            </li>
-                            <li>
-                                <a href="#">Revendedores</a>
-                            </li>
-                            <li>
-                                <a href="/cardapio.html">Cardapio</a>
-                            </li>
-                            <li>
-                                <a href="/contato.html">Contato</a>
-                            </li>
-                        </ul>
+                    <div class="w-contacts-item">
+                        <i class="fa fa-map-marker"></i>
+                        <span class="w-socials" title="Endereço">&nbsp;Rua General Dionisío Cerqueira 306B,
+                            Gutierrez, Belo Horizonte - MG</span>
+                    </div>
+
+                    <div class="w-contacts-item for_phone">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 99273-0000</span>
+                    </div>
+                    <div class="w-contacts-item for_phone">
+                        <i class="fa fa-phone"></i>
+                        <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 3047-0581</span>
+                    </div>
+
+                    <div class="w-contacts-item for_email">
+                        <i class="fa fa-envelope"></i>
+                        <span class="w-socials">
+                            <a href="mailto:famigliabubani@gmail.com" title="E-mail">&nbsp;famigliabubani@gmail.com</a>
+                        </span>
                     </div>
                 </div>
-
-                <div class="col-lg-4">
-                    <div id="contact-2" class="widget widget_contact">
-                        <h4>Contato</h4>
-                        <br>
-                        <div class="w-contacts-item">
-                            <i class="fa fa-map-marker"></i>
-                            <span class="w-socials" title="Endereço">&nbsp;Rua General Dionisío Cerqueira 306,
-                                Gutierrez, Belo Horizonte - MG</span>
-                        </div>
-
-                        <div class="w-contacts-item for_phone">
-                            <i class="fa fa-phone"></i>
-                            <span class="w-socials" title="Telefone/WhatsApp">&nbsp;(31) 99273-0000</span>
-                        </div>
-
-                        <div class="w-contacts-item for_email">
-                            <i class="fa fa-envelope"></i>
-                            <span class="w-socials">
-                                <a href="mailto:famigliabubani@gmail.com"
-                                    title="E-mail">&nbsp;famigliabubani@gmail.com</a>
-                            </span>
-                        </div>
+                <br>
+                <div class="w-socials">
+                    <div class="socialm">
+                        <a href="https://www.instagram.com/famigliabubani" target="_blank">
+                            <img src="/public/assets/instagram.png" width="40px" title="Instagram">
+                        </a>
                     </div>
-                    <br>
-                    <div class="w-socials">
-                        <div class="socialm">
-                            <a href="https://www.instagram.com/famigliabubani" target="_blank">
-                                <img src="/public/assets/instagram.png" width="40px" title="Instagram">
-                            </a>
-                        </div>
-                        &nbsp;
-                        <div class="socialm">
-                            <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
-                                <img src="/public/assets/facebook.png" width="40px" title="Facebook">
-                            </a>
-                        </div>
+                    &nbsp;
+                    <div class="socialm">
+                        <a href="https://www.facebook.com/PastificioFamigliaBubani/" target="_blank">
+                            <img src="/public/assets/facebook.png" width="40px" title="Facebook">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     </div>
     </div>
 
@@ -396,6 +439,7 @@
             modal.classList.add("hide")
         })
     </script>
+
 </body>
 
 </html>

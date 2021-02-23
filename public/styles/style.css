@@ -2,27 +2,29 @@ body {
   background-image: url("/public/assets/");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Comfortaa', cursive;
-  
+  font-family: "Comfortaa", cursive;
 }
-h1{
+h1 {
   padding-top: 20px;
   text-align: center;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   color: #3d3030;
   font-weight: bold;
 }
-h2{
-    color: #AB4C2C;
+h2 {
+  color: #ab4c2c;
+  font-weight: 700;
 }
-h3{
-  color: #4C543C;
+h3 {
+  margin: 10px;
+  color: #4c543c;
   font-size: 20px;
+  font-weight: 700;
 }
-h4{
-  color: #4C543C;
+h4 {
+  color: #4c543c;
 }
-p{
+p {
   text-align: left;
 }
 .navbar {
@@ -33,7 +35,7 @@ p{
   width: 100px;
 }
 .nav-link {
-  color: #4C543C !important;
+  color: #4c543c !important;
 }
 .nav-link:hover {
   color: #929292 !important;
@@ -43,31 +45,34 @@ p{
   padding-bottom: 50px;
 }
 
-
-
 /* index */
 #index-image-back {
-  background-image: url(/public/assets/pics/Arte\ com\ comida/24052018-IMG_92082.jpg);
+  background-image: url(/public/assets/pics/trigo.jpg);
   background-size: cover;
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; */
+}
+
+.stamp {
+  width: 200px;
+  margin-top: 60px;
 }
 
 #video {
   text-align: center;
- }
+}
 
-#video img {
+#video video {
   z-index: 1;
   width: 100%;
   height: auto;
   max-height: 500px;
 }
 
-@media (min-width: 891px) {
+@media (min-width: 880px) {
   #video {
-  padding: 50px;
+    padding: 50px;
   }
 
   #video img {
@@ -76,41 +81,39 @@ p{
   }
 }
 
-
-
-
 /* quem somos */
-#sobre{
+#sobre {
   background-image: url(/public/assets/pics/Produtos\ Ilustrativas/25052018-IMG_96272.jpg);
-    
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#sobre p{
-  background-color: #1f1f1f85;
+#sobre p {
+  background-color: #1f1f1fd8;
   border-radius: 8px;
   padding: 10%;
-  
+
   text-align: center;
   font-size: 15px;
-  color: #DCD4C4;
+  color: #dcd4c4;
 }
 #sobre .poema h4 {
   background-color: #00000000;
-  font-family: 'Courgette', cursive;
+  font-family: "Courgette", cursive;
   text-align: center;
   font-size: auto;
-  color: #DCD4C4;
+  color: #dcd4c4;
+}
+@media (min-width: 992px) {
+  #sobre .col-lg-6 {
+    margin: auto;
+  }
 }
 
-
-
-
 /* Style the buttons inside the Revendedores tab */
-.tab button { 
-  border-radius: 8px;
+.tab button {
   padding: 20px 10px;
   width: 300px;
   border: none;
@@ -122,15 +125,13 @@ p{
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  border-radius: 8px;
   background-color: #bebebe80;
 }
 
 /* Create an active/current "tab button" class */
 .tab button.active {
-  background-color: #AB4C2C;
+  background-color: #ab4c2c;
   color: white;
-  border-radius: 8px;
 }
 
 /* submenu para BH */
@@ -139,21 +140,45 @@ p{
   font-weight: normal !important;
 }
 
+/* botao de revendedores */
+#qsr {
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 00px 20%;
 
+  font-size: 25px;
+  background-color: #ecf3dd;
+  border-radius: 8px;
+  transition: 400ms;
+  border: 0;
+}
 
+#qsr:hover {
+  border-radius: 8px;
+  padding: 5px 1px;
+
+  background-color: #d1d8c0;
+}
+.revendedores-texto {
+  margin: 0px 20px;
+  text-align: center;
+}
+.rev {
+  font-weight: 700;
+}
 
 
 
 
 /* sidepanel navigation */
-.sidepanel  {
+.sidepanel {
   width: 0;
   position: fixed;
   z-index: 1;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #4C543C;
+  background-color: #4c543c;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -163,12 +188,12 @@ p{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #DCD4C4;
+  color: #dcd4c4;
   display: block;
   transition: 0.3s;
 }
 .sidepanel a:hover {
-  color: #AB4C2C;
+  color: #ab4c2c;
 }
 .sidepanel .closebtn {
   position: absolute;
@@ -185,26 +210,23 @@ p{
   border-radius: 8px;
 }
 .openbtn:hover {
-  background-color:#DCD4C4;
+  background-color: #dcd4c4;
   border-radius: 8px;
 }
 
-
-
-
 /* cardapio section index */
-#cardapio2{
+#cardapio2 {
   background-image: url(/public/assets/pics/Arte\ com\ comida/24052018-IMG_92082.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#cardapio2 h3{
-  background-color: #1f1f1fad;
+#cardapio2 h3 {
+  background-color: #1f1f1fd8;
   border-radius: 8px;
   font-size: 15px;
-  padding:20px;
+  padding: 20px;
   color: white;
   text-align: left;
   line-height: 1.5;
@@ -212,14 +234,25 @@ p{
 #cardapio2 span {
   font-size: 20px;
 }
-#cardapio p{
-  color: #4C543C;
+#cardapio2 .peso {
+  font-size: 15px;
+  font-weight: 500;
+}
+#cardapio2 .veg {
+  color: #08c408;
+}
+#cardapio2 .delivery {
+  font-size: 25px;
+  color: #08c408;
+}
+#cardapio2 img {
+  width: 20px;
+}
+#cardapio p {
+  color: #4c543c;
 }
 .cardapio {
   background-color: #dee4d2 !important;
-}
-.cardapio .row {
-  margin-top: 50px;
 }
 .col-lg-4 img {
   border-radius: 8px;
@@ -231,35 +264,10 @@ p{
   margin-top: 30px;
   text-align: center;
   margin-bottom: 20px;
-  
 }
-iframe{
+iframe {
   border-radius: 8px;
 }
-
-
-
-/* download button */
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  
-  background-color: RoyalBlue;
-}
-.btn a{
-  text-decoration: none;
-  color: white;
-}
-
-
 
 
 
@@ -284,13 +292,12 @@ iframe{
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: #AB4C2C;
+  background-color: #ab4c2c;
 }
 .over:hover .overlay {
   opacity: 80%;
 }
 .over-text {
-  
   color: #fafafa;
   font-size: 20px;
   position: absolute;
@@ -302,8 +309,6 @@ iframe{
   text-align: center;
 }
 
-
-
 .w-socials h3 {
   text-align: left;
   font-size: 15px;
@@ -312,98 +317,82 @@ iframe{
   border-radius: 8px;
 }
 
-
-
-
 /* footer menu and footer info */
 
 .bg-footer {
   position: bottom;
-  
 }
-.w-contacts-item{
+.w-contacts-item {
   text-align: left;
- }
-.w-socials{
- 
+}
+.w-socials {
   text-align: left;
   font-weight: normal;
-  color: #4C543C;
+  color: #4c543c;
 }
-.w-socials a{
+.w-socials a {
   cursor: pointer;
-  color:inherit;
-  text-decoration:none;
+  color: inherit;
+  text-decoration: none;
 }
-.w-socials a h3{
+.w-socials a h3 {
   text-align: left;
 }
-.footer-menu{
+.footer-menu {
   text-align: left;
 }
-.footer-menu ul li a{
+.footer-menu ul li a {
   cursor: pointer;
   font-weight: normal;
-  color: #4C543C;
+  color: #4c543c;
 }
-.footer-menu ul  {
-  list-style: none; 
+.footer-menu ul {
+  list-style: none;
 }
 .footer-menu ul li:before {
- color: #AB4C2C;
+  color: #ab4c2c;
   content: "↳‎‎‎ ";
- 
 }
-.socialm{
+.socialm {
   display: inline-block;
 }
 
-
-
-
-
 /* send and  reset buttons */
-.test{
+.test {
   cursor: pointer;
-  background-color: #4C543C;
-  
-  height:50px;
-  width:80px;
+  background-color: #4c543c;
+
+  height: 50px;
+  width: 80px;
   border-radius: 8px;
   transition: 400ms;
   border: 0;
 }
-.test:hover{
+.test:hover {
   background-color: #088734;
 }
-
-
-
-
-
 
 /* email form */
 * {
   box-sizing: border-box;
 }
-input[type=text],
+input[type="text"],
 select,
-textarea { 
+textarea {
   font-size: medium;
   width: 100%;
   padding: 5px;
-  border: 1px solid #4C543C;
+  border: 1px solid #4c543c;
   background-color: #fafafa;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
-  
 }
-input[type=submit] {
+input[type="submit"] {
   cursor: pointer;
-  background-color: #AB4C2C;
+  background-color: #ab4c2c;
   color: white;
- 
+
   height: 50px;
   width: 100px;
   border-radius: 8px;
@@ -411,14 +400,14 @@ input[type=submit] {
   border: 0;
 }
 
-input[type=submit]:hover {
-  background-color: #4C543C;
+input[type="submit"]:hover {
+  background-color: #4c543c;
 }
-input[type=reset] {
+input[type="reset"] {
   cursor: pointer;
-  background-color: #AB4C2C;
+  background-color: #ab4c2c;
   color: white;
-  
+
   height: 50px;
   width: 100px;
   border-radius: 8px;
@@ -426,39 +415,11 @@ input[type=reset] {
   border: 0;
 }
 
-input[type=reset]:hover {
-  background-color: #4C543C;
+input[type="reset"]:hover {
+  background-color: #4c543c;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-#qsr {
-  padding: 10px;
-  cursor: pointer;
-  background-color: #95a575;
-  font-size: 25px;
-  color: white;
-  border-radius: 8px;
-  transition: 400ms;
-  border: 0;
-}
-
-#qsr:hover {
-  background-color: #4C543C;
-}
-
-#modal{
+#modal {
   background-color: #2a3611ef;
 
   height: 100vh;
@@ -472,27 +433,25 @@ input[type=reset]:hover {
 
   transition: 400ms;
 }
-#modal.hide{
+#modal.hide {
   display: none;
 }
-#modal .content{
+#modal .content {
   color: white;
 
   width: 55%;
 }
-#modal .header{
+#modal .header {
   padding-top: 5%;
-  
+
   display: flex;
   align-items: center;
-  
 }
-#modal .header a{
+#modal .header a {
   background-image: url(/public/assets/x.svg);
-  
+
   width: 20px;
   height: 20px;
-
 
   font-size: 0.01px;
 }
