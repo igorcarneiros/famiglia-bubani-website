@@ -36,6 +36,107 @@
     <meta name="msapplication-TileImage" content="/public/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: black;
+            background-color: #bebebe80;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 3px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px;
+            color: black;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 3px;
+            color: black;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: #ecf3dd;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -50,7 +151,7 @@
             <a class="menu" href="/cardapio.html">Cardápio</a>
         </li>
         <li class="nav-item">
-            <a class="menu" href="#">Loja</a>
+            <a class="menu" href="#">Empório</a>
         </li>
         <li class="nav-item">
             <a class="menu" href="/revendedores.html">Revendedores</a>
@@ -89,7 +190,7 @@
                     <a class="nav-link" href="/cardapio.html">Cardápio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Loja</a>
+                    <a class="nav-link" href="#">Empório</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/revendedores.html">Revendedores</a>
@@ -107,10 +208,9 @@
         <button class="openbtn" onclick="openNav()"><span class="navbar-toggler-icon"></span></button>
     </nav>
 
-
     <section id="loja">
         <div class="container-fluid text-center margin">
-            <h2>Loja</h2>
+            <h2>Empório</h2>
             <div class="container">
                 <br>
                 <div class="row ">
@@ -118,20 +218,77 @@
 
                         <h3 class="text-justify">
                             <b>Endereço: </b>
-                            <br> Rua General Dionísio Cerqueira, 306 – Gutierrez, Belo Horizonte <br><br>
+                            <br>
+                            <a href="https://www.google.com/maps/place/Rua+General+Dion%C3%ADsio+Cerqueira,+306+-+Gutierrez,+Belo+Horizonte+-+MG,+30441-063/@-19.9358657,-43.9562194,18z/data=!4m5!3m4!1s0xa69771a82028f3:0x2b871e67331e8731!8m2!3d-19.9358632!4d-43.9557849"
+                                target="_blank" title="Clique para ver o endereço no google maps"
+                                style="text-decoration: none; color: #ab4c2c;"><i class="fas fa-map-marker-alt"></i> Rua
+                                General Dionisío Cerqueira 306B,
+                                Gutierrez, Belo Horizonte </a></a> <br><br>
                             <b>Horário:</b> <br>
-                            Segunda a Sexta, entre 14h e 19h <br>
-                            Sábado, entre 10h e 16h <br> <br>
-                            Telefone: <br>(31) 3047-0581
-
-
-                            <!-- <a href="https://wa.me/5531992730000"> <img src="/public/assets/zap.png" width="40px" title="Clique para falar comigo no WhatsApp"></a>
-                                (31) 99273-0000 <br> -->
+                            Segunda a Sexta, das 10h às 19h <br>
+                            Sábado, das 10h às 16h <br> <br>
+                            Telefone: <br><i class="fas fa-phone"></i> (31) 3047-0581 <br>
+                            <a href="https://wa.me/5531992730000" target="_blank"
+                                title="Clique para falar comigo no WhatsApp" style="text-decoration: none; color: #ab4c2c;"><i class="fas fa-mobile-alt"></i> (31) 99273-0000  </a><br>
                         </h3>
-
                     </div>
-                    <div class="col-lg-6">
 
+                    <div class="col-lg-6">
+                        <div class="container">
+                            <a class="prev" onclick="plusSlides(-1)">❮</a>
+                            <a class="next" onclick="plusSlides(1)">❯</a>
+
+                            <div class="mySlides">
+
+                                <img src="/public/assets/pics/loja/1 alta resolução.jpg" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides">
+
+                                <img src="/public/assets/pics/loja/2 alta resolução.jpg" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides">
+
+                                <img src="/public/assets/pics/loja/3 alta resolução.jpg" style="width: 100%">
+                            </div>
+
+                            <div class="mySlides">
+
+                                <img src="/public/assets/pics/loja/4 alta resolução.jpg" style="width: 100%">
+                            </div>
+                        </div>
+
+                        <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+
+                            function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                var dots = document.getElementsByClassName("demo");
+                                var captionText = document.getElementById("caption");
+                                if (n > slides.length) { slideIndex = 1 }
+                                if (n < 1) { slideIndex = slides.length }
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";
+                                }
+                                for (i = 0; i < dots.length; i++) {
+                                    dots[i].className = dots[i].className.replace(" active", "");
+                                }
+                                slides[slideIndex - 1].style.display = "block";
+                                dots[slideIndex - 1].className += " active";
+                                captionText.innerHTML = dots[slideIndex - 1].alt;
+                            }
+                        </script>
 
                     </div>
 
@@ -164,7 +321,7 @@
                             <a href="/cardapio.html">Cardápio</a>
                         </li>
                         <li>
-                            <a href="/loja.html">Loja</a>
+                            <a href="/loja.html">Empório</a>
                         </li>
                         <li>
                             <a href="/revendedores.html">Revendedores</a>

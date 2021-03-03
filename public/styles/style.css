@@ -239,7 +239,14 @@ p {
   font-weight: 500;
 }
 #cardapio2 .veg {
+  background-color: #1f1f1fd8;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 20px;
   color: #08c408;
+  text-align: right;
+  line-height: 1.5;
 }
 #cardapio2 .delivery {
   font-size: 25px;
@@ -247,6 +254,9 @@ p {
 }
 #cardapio2 img {
   width: 20px;
+}
+#cardapio2 .stamp {
+  width: 150px;
 }
 #cardapio p {
   color: #4c543c;
